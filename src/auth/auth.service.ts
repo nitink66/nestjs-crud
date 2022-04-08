@@ -72,7 +72,7 @@ export class AuthService {
         return this.signToken(user.id, user.email)
     }
 
-
+    //for having jwt token
     async signToken(userId: number, email: string): Promise<{ access_token: string }> {
         const payload = {
             sub: userId,
