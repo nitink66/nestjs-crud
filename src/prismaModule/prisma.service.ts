@@ -9,6 +9,7 @@ export class PrismaService extends PrismaClient {
     constructor(config: ConfigService) {
         super({
             datasources: {
+                // config is from .env
                 db: {
                     url: config.get('DATABASE_URL')
                 }
